@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./style/main.css">
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <main class="container">
+    <article>
+
+      <section class="card rating-card">
+        <div class="star-icon">
+          <img src="./images/icon-star.svg" alt="star">
+        </div>
+
+        <h1>How did we do?</h1>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+        <form class="rating-form">
+          <div class="rating-grid">
+            <label>
+              <input type="radio" name="rate" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="rate" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="rate" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="rate" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="rate" value="5" checked>
+              5
+            </label>
+          </div>
+
+          <input class="btn form-btn" type="submit" value="submit">
+
+        </form>
+
+
+      </section>
+
+      <section class="card thanks-card hidden">
+
+        <img src="./images/illustration-thank-you.svg" alt="thank you!">
+
+        <p class="rate-selection">You selected {Add rating here} out of 5</p>
+
+        <h2>Thank you!</h2>
+
+        <p class="thanks-message">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        
+      </section>
+    </article>
+  </main>
+
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
