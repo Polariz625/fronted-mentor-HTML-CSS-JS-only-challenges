@@ -10,15 +10,11 @@ d.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    alert("enviando puntuacion");
-
     //* obteniedo solo el <input> de tipo "radio" que este marcado (checked)
     const $checkedInput = document.querySelector('.rating-grid input[type="radio"]:checked');
 
     //* ahora que tenemos solo el <input> que esta marcado, le sacamos el valor de su atributo "value"
     let userRating = $checkedInput ? $checkedInput.value : null;
-
-    // console.log($checkedInput, userRating);
 
     //* poner el userRating en el thanks-card
     $ratingSummary.textContent = `You selected ${userRating} out of 5`;
