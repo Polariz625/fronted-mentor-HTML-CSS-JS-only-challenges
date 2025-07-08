@@ -1,0 +1,271 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@font-face {
+	font-family: "manrope";
+	src: url("../assets/fonts/Manrope-VariableFont_wght.woff2") format("truetype");
+}
+
+:root {
+	--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+	--Very-Dark-Grayish-Blue-alpha: hsla(217, 19%, 35%, 0.74);
+	--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+	--Grayish-Blue: hsl(212, 23%, 69%);
+	--Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+	--border-radius: 0.5rem;
+}
+
+/* ************************************************* */
+/* ******************** Styling ********************  */
+body {
+	background-color: var(--Light-Grayish-Blue);
+	font-family: "manrope";
+	font-size: 13px;
+}
+
+h1 {
+	margin-block-start: 0;
+	font-weight: 700;
+	color: var(--Very-Dark-Grayish-Blue);
+}
+
+p {
+	font-weight: 500;
+	color: var(--Very-Dark-Grayish-Blue-alpha);
+	line-height: 1.6;
+}
+
+.active-btn {
+	background-color: var(--Very-Dark-Grayish-Blue);
+	color: white;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100dvh;
+}
+
+.card-container {
+	width: 320px;
+	background-color: white;
+	border-radius: var(--border-radius);
+	position: relative;
+	overflow: hidden;
+	box-shadow: 8px  8px 50px 0px var(--Grayish-Blue);
+}
+
+.card-info {
+	padding: 2rem;
+	padding-block-end: 1rem;
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.product-pitch {
+	margin-block-end: 1.7rem;
+}
+
+.main-img-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* .move-left-right {
+	animation: moveLeftRight 0.3s linear forwards;
+}
+
+.move-right-left {
+	animation: moveRightLeft 0.3s linear forwards;
+}
+
+@keyframes moveLeftRight {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes moveRightLeft {
+	0% {
+		transform: translateX(100%);
+	}
+} */
+
+.share-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: var(--Very-Dark-Grayish-Blue);
+	padding-inline: 2rem;
+	padding-block: 1.5rem;
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.share-container p {
+	color: rgba(255, 255, 255, 0.534);
+	font-weight: 500;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	text-box-trim: trim-both;
+	text-box-edge: cap alphabetic;
+}
+
+.share-btn {
+	background-color: var(--Light-Grayish-Blue);
+	padding: 0.3rem;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+}
+
+.share-btn-3 {
+	fill: #6E8098;
+}
+
+.active-btn{
+	background-color: var(--Desaturated-Dark-Blue);
+	fill: #fff;
+}
+
+.share-btn img {
+	width: 15px;
+	height: 15px;
+}
+
+.share-btn-1{
+	fill: #6E8098;
+}
+
+.share-btn-3 {
+	display: none;
+}
+
+.share-socials {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.share-socials img {
+	width: 20px;
+	height: 20px;
+}
+
+.share-socials p {
+	margin: 0;
+}
+
+.user-info {
+	display: flex;
+	gap: 1rem;
+}
+
+.user-name {
+	color: var(--Very-Dark-Grayish-Blue);
+	font-weight: 700;
+}
+
+.user-info p {
+	margin: 0;
+}
+
+.user-profile {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.user-info img {
+	width: 40px;
+	border-radius: 50%;
+}
+
+@media (width > 850px) {
+	.card-info {
+		border-radius: var(--border-radius);
+		padding: 2rem;
+	}
+
+	.card-container {
+		display: flex;
+		flex-direction: row;
+		overflow: visible;
+		width: 680px;
+	}
+
+	.main-img-container img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: left;
+		border-radius: var(--border-radius) 0 0 var(--border-radius);
+	}
+
+	.share-container {
+		width: auto;
+		border-radius: var(--border-radius);
+		bottom: 95px;
+		right: -70px;
+		padding-block: 1rem;
+	}
+
+	.share-container::before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 15px solid var(--Very-Dark-Grayish-Blue);
+		border-bottom: 15px solid transparent;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		position: absolute;
+		top: 50px;
+		left: 98px;
+	}
+
+	.share-btn-1 {
+		display: none;
+	}
+
+	.share-btn-2 {
+		display: none;
+	}
+
+	.share-btn-3 {
+		display: block;
+	}
+
+	.share-socials p {
+		font-size: 0.7rem;
+	}
+
+	.share-socials img {
+		width: 15px;
+		height: 15px;
+	}
+}
