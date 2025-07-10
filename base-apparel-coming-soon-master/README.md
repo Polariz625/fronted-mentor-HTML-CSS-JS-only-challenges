@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-master-y50Cl2BkVl)
 - Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-JS-only-challenges/base-apparel-coming-soon-master/)
 
 ## My process
