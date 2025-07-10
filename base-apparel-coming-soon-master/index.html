@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <article class="base-apparel-container">
+
+      <div class="inner-container">
+        <div class="logo-img">
+          <img src="./images/logo.svg" alt="page logo">
+        </div>
+
+        <div class="main-img">
+          <img src="./images/hero-mobile.jpg" alt="main image">
+        </div>
+
+        <div class="base-apparel-info">
+
+          <h1><span>We're</span><br>coming<br>soon</h1>
+
+          <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+
+          <form id="form">
+
+            <input id="email" type="email" name="email" placeholder="Email Address" pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please provide a valid email" required>
+
+            <button class="submit-btn">
+              <img src="./images/icon-arrow.svg" alt="arrow-icon">
+            </button>
+
+            <img class="error-icon hidden" src="./images/icon-error.svg" alt="error">
+
+            <span class="error-message hidden"><small>Please provide a valid email</small></span>
+
+          </form>
+
+        </div>
+      </div>
+
+      <div class="desktop-img hidden">
+        <!-- <img src="./images/hero-desktop.jpg" alt="desktop image"> -->
+      </div>
+
+    </article>
+  </main>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
