@@ -28,7 +28,11 @@ body {
 	font-family: "josefin";
 	text-align: center;
 	margin: 0;
-	background-color: var(--gradient1);
+
+	background-image: url("../images/bg-pattern-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }
 
 img {
