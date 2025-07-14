@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-JS-only-challenges/ping-coming-soon-page-master/)
+- Solution URL: [frontend mentor solution](https://www.frontendmentor.io/solutions/ping-coming-soon-page-master-uVIclGb5GV)
+- Live Site URL: [solution live site URL](https://polariz625.github.io/fronted-mentor-HTML-CSS-JS-only-challenges/ping-coming-soon-page-master/)
 
 ## My process
 
